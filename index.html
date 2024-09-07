@@ -37,12 +37,20 @@
             font-size: 16px;
             margin: 10px 0;
         }
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
+        .calculator-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .calculator-link a {
+            color: #6a0dad;
+            text-decoration: none;
+        }
+        .calculator-link a:hover {
+            text-decoration: underline;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
 <body>
 
@@ -52,13 +60,21 @@
 
 <div class="content">
     <h2>Quadratic Equation Formula</h2>
-    <p>The quadratic equation formula is given by:</p>
-    <p><strong>x = (-b ± √(b² - 4ac)) / 2a</strong></p>
+    <p>The quadratic equation formula is:</p>
+    <p><span id="quadratic-formula"></span></p>
     
-    <h2>Embedded Calculator</h2>
-    <p>You can use the following calculator during your exam:</p>
-    <iframe src="https://myopenmaths3.s3.amazonaws.com/cfiles/9327/GRAPH85emulator.exe" title="Calculator"></iframe>
+    <h2>Calculator</h2>
+    <p>You can download the calculator from the following link:</p>
+    <div class="calculator-link">
+        <a href="https://myopenmaths3.s3.amazonaws.com/cfiles/9327/GRAPH85emulator.exe" download>Download Calculator</a>
+    </div>
 </div>
+
+<script>
+    // Display the quadratic formula using MathJax
+    document.getElementById('quadratic-formula').innerHTML = '\\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\)';
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "quadratic-formula"]);
+</script>
 
 </body>
 </html>
