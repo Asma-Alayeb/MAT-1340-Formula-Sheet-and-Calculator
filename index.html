@@ -37,17 +37,11 @@
             font-size: 16px;
             margin: 10px 0;
         }
-        .calculator-link {
-            display: block;
+        .calculator {
             margin-top: 20px;
-            font-size: 16px;
-        }
-        .calculator-link a {
-            color: #6a0dad;
-            text-decoration: none;
-        }
-        .calculator-link a:hover {
-            text-decoration: underline;
+            height: 500px; /* Adjust height as needed */
+            border: 1px solid #ccc;
+            border-radius: 8px;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -63,11 +57,9 @@
     <p>The quadratic equation formula is:</p>
     <p><span id="quadratic-formula"></span></p>
     
-    <h2>Calculator</h2>
-    <p>You can download the calculator from the following link:</p>
-    <div class="calculator-link">
-        <a href="https://myopenmaths3.s3.amazonaws.com/cfiles/9327/GRAPH85emulator.exe" download>Download Calculator</a>
-    </div>
+    <h2>Embedded Calculator</h2>
+    <p>Below is a calculator that you can use:</p>
+    <iframe src="https://www.calculator.net" class="calculator" title="Calculator"></iframe>
 </div>
 
 <script>
