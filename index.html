@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAT 1340 Test 1 Formula Sheet</title>
+    <title>MAT 1340 Tests Formula Sheet</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,6 +57,10 @@
     <p>The quadratic equation formula is:</p>
     <p><span id="quadratic-formula"></span></p>
     
+    <h2>Average Rate of Change Formula</h2>
+    <p>The average rate of change is given by:</p>
+    <p><span id="arc-formula"></span></p>
+
     <h2>Embedded Graphing Calculator</h2>
     <p>Below is a graphing calculator that you can use:</p>
     <iframe src="https://www.desmos.com/calculator" class="calculator" title="Desmos Graphing Calculator" allowfullscreen></iframe>
@@ -66,6 +70,10 @@
     // Display the quadratic formula using MathJax
     document.getElementById('quadratic-formula').innerHTML = '\\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\)';
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, "quadratic-formula"]);
+
+    // Display the average rate of change formula using MathJax
+    document.getElementById('arc-formula').innerHTML = '\\(\\text{Average rate of change} = \\frac{f(x_2) - f(x_1)}{x_2 - x_1}\\)';
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "arc-formula"]);
 </script>
 
 </body>
