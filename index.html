@@ -57,6 +57,18 @@
     <p>The quadratic equation formula is:</p>
     <p><span id="quadratic-formula"></span></p>
     
+    <h2>General Form of a Quadratic Function</h2>
+    <p>The general form of a quadratic function is:</p>
+    <p><span id="general-form"></span></p>
+    
+    <h2>Standard Form of a Quadratic Function</h2>
+    <p>The standard form of a quadratic function is:</p>
+    <p><span id="standard-form"></span></p>
+
+    <h2>Vertex Formula of a Quadratic Function</h2>
+    <p>The formula for the vertex of a quadratic function is:</p>
+    <p><span id="vertex-formula"></span></p>
+
     <h2>Average Rate of Change Formula</h2>
     <p>The average rate of change is given by:</p>
     <p><span id="arc-formula"></span></p>
@@ -70,6 +82,18 @@
     // Display the quadratic formula using MathJax
     document.getElementById('quadratic-formula').innerHTML = '\\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\)';
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, "quadratic-formula"]);
+
+    // Display the general form of a quadratic function using MathJax
+    document.getElementById('general-form').innerHTML = '\\(f(x) = ax^2 + bx + c\\)';
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "general-form"]);
+
+    // Display the standard form of a quadratic function using MathJax
+    document.getElementById('standard-form').innerHTML = '\\(f(x) = a(x - h)^2 + k\\)';
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "standard-form"]);
+
+    // Display the vertex formula using MathJax
+    document.getElementById('vertex-formula').innerHTML = '\\(h = -\\frac{b}{2a}, \\quad k = f(h)\\)';
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "vertex-formula"]);
 
     // Display the average rate of change formula using MathJax
     document.getElementById('arc-formula').innerHTML = '\\(\\text{Average rate of change} = \\frac{f(x_2) - f(x_1)}{x_2 - x_1}\\)';
