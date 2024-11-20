@@ -73,6 +73,30 @@
     <p>The average rate of change is given by:</p>
     <p><span id="arc-formula"></span></p>
 
+    <h2>Logarithmic Properties</h2>
+    <p>The properties of logarithms are as follows:</p>
+    <ul>
+        <li>Product Rule: \( \log_b(xy) = \log_b(x) + \log_b(y) \)</li>
+        <li>Quotient Rule: \( \log_b\left(\frac{x}{y}\right) = \log_b(x) - \log_b(y) \)</li>
+        <li>Power Rule: \( \log_b(x^n) = n \log_b(x) \)</li>
+    </ul>
+
+    <h2>Change of Base Formula</h2>
+    <p>The change of base formula is:</p>
+    <p><span id="change-of-base-formula"></span></p>
+
+    <h2>Compound Interest Formula</h2>
+    <p>The compound interest formula is:</p>
+    <p><span id="compound-interest-formula"></span></p>
+
+    <h2>Continuous Interest/Growth Formula</h2>
+    <p>The continuous interest/growth formula is:</p>
+    <p><span id="continuous-interest-formula"></span></p>
+
+    <h2>Standard Form of the Equation of a Circle</h2>
+    <p>The standard form of the equation of a circle centered at \( (h, k) \) is:</p>
+    <p><span id="circle-equation"></span></p>
+
     <h2>Embedded Graphing Calculator</h2>
     <p>Below is a graphing calculator that you can use:</p>
     <iframe src="https://www.desmos.com/calculator" class="calculator" title="Desmos Graphing Calculator" allowfullscreen></iframe>
@@ -98,6 +122,22 @@
     // Display the average rate of change formula using MathJax
     document.getElementById('arc-formula').innerHTML = '\\(\\text{Average rate of change} = \\frac{f(x_2) - f(x_1)}{x_2 - x_1}\\)';
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, "arc-formula"]);
+
+    // Display the change of base formula using MathJax
+    document.getElementById('change-of-base-formula').innerHTML = '\\(\\log_b(x) = \\frac{\\log_c(x)}{\\log_c(b)}\\)';
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "change-of-base-formula"]);
+
+    // Display the compound interest formula using MathJax
+    document.getElementById('compound-interest-formula').innerHTML = '\\(A = P\\left(1 + \\frac{r}{n}\\right)^{nt}\\)';
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "compound-interest-formula"]);
+
+    // Display the continuous interest/growth formula using MathJax
+    document.getElementById('continuous-interest-formula').innerHTML = '\\(A = Pe^{rt}\\)';
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "continuous-interest-formula"]);
+
+    // Display the standard form of the equation of a circle using MathJax
+    document.getElementById('circle-equation').innerHTML = '\\( (x - h)^2 + (y - k)^2 = r^2 \\)';
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "circle-equation"]);
 </script>
 
 </body>
